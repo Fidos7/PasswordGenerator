@@ -2,7 +2,6 @@ import tkinter as tk
 import string
 import random
 
-from main1 import nadpis, button_password
 
 okno = tk.Tk()
 okno.title("Generátor Hesla")
@@ -23,6 +22,6 @@ button_password = tk.Button(frame_password, text="Generuj", command=lambda: pass
 button_password.pack(side="left", padx=5)
 
 passwordDone = tk.Label(okno, text="")
-passwordDone.pack(side="left")
+passwordDone.pack()
 
 okno.mainloop()
